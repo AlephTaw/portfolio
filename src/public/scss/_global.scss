@@ -1,0 +1,54 @@
+// $p-green: #26BA7C;
+// $p-black: #000000;
+// $p-white: #FFFFFF;
+// $p-yellow: #FFA85C;
+// $p-blue: #3F82D7;
+// $p-red: #FA6D6D;
+
+// basic colors
+$white-color: #ffffff;
+$black-color: #000000;
+
+$light-green-color: #26BA7C;
+$blue-color: #0b75ff;
+$light-blue-color: #3F82D7;
+$light-orange-color: #FFA85C;
+$red-color: #FA6D6D;
+
+.light-green-color
+{
+  color: $light-green-color;
+}
+.blue-color
+{
+  color: $blue-color;
+}
+.light-blue-color
+{
+  color: $light-blue-color;
+}
+.light-orange-color
+{
+  color: $light-orange-color;
+}
+.red-color
+{
+  color: $red-color;
+}
+.black-color
+{
+  color: $black-color;
+}
+.white-color
+{
+  color: $white-color;
+}
+
+:export
+{
+  lightGreenColor: $light-green-color;
+  blueColor: $blue-color;
+  lightBlueColor: $light-blue-color;
+  lightOrangeColor: $light-orange-color;
+  redColor: $red-color
+}
