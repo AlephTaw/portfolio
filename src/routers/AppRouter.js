@@ -5,6 +5,7 @@ import Footer from '../components/footer/Footer';
 import NotFoundPage from '../components/layouts/NotFoundPage';
 import HomePage from '../components/layouts/HomePage';
 import About from '../components/layouts/About';
+import Timeline from '../components/layouts/Timeline';
 import ProjectSummaries from '../components/categories/ProjectSummaries';
 import PaperSummaries from '../components/categories/PaperSummaries';
 
@@ -22,6 +23,7 @@ const AppRouter = () => (
             {/* level 1: */}
             <Route path="/" component={HomePage} exact={true} />
             <Route path="/about" component={About} exact={true} />
+            <Route path="/timeline" component={Timeline} exact={true} />
             {/* level 2: Categories */}
             {/* level 3: individual projects and resources within a category*/}
             <Route path='/research/:id' component={ResearchTemplate} exact={true}/>

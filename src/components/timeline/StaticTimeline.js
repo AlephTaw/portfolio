@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Button, Fade } from 'react-bootstrap';
 import projectReducer from '../../redux/reducers/projectReducer';
+import LatexInMarkDown from '../projects/LatexInMarkdown'
 
 // const TimelineEntry = (event) => {
 //   return(
@@ -19,8 +20,7 @@ const CollapsableTimeline = (props) => {
   const { timeline } = props
   return (
     <>
-      <div className="col-xs-12" style={{height: "50px"}}></div>
-                <h2 className="text-center mt-5">
+                {/* <h2 className="text-center mt-5">
                 <button
                   // className=""
                   // onClick={() => setOpen(!open)}
@@ -31,7 +31,7 @@ const CollapsableTimeline = (props) => {
                   Timeline
                 </button> 
                 </h2>
-                <hr></hr>
+                <hr></hr> */}
                 {/* <div className="container mt-5 mb-5">
                 <div className="row">
                 <div className="col-md-10 offset-md-1"> */}
@@ -50,7 +50,7 @@ const CollapsableTimeline = (props) => {
                   <div className={event.eventClass}>
                   <div className="tl-content">
                     <h2>{event.date}</h2>
-                    <p>{event.description}</p>
+                    <LatexInMarkDown source ={event.description}/>
                   </div>
                 </div>
               </div>         

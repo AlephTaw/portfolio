@@ -4,6 +4,7 @@ import {Nav, Navbar, NavDropdown} from 'react-bootstrap';
 const Navigation = () => {
   return (
     <Navbar collapseOnSelect>
+      <Navbar.Brand href="/">Cloud Lab v1.00.00</Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mr-auto">
@@ -11,10 +12,11 @@ const Navigation = () => {
         <Nav>
           <Nav.Link eventKey={2} href="/">Home</Nav.Link>
           <Nav.Link href="/#/about">About</Nav.Link>
+          <Nav.Link href="/#/Timeline">Timeline</Nav.Link>
           <NavDropdown title="Category" id="collasible-nav-dropdown">
-            <NavDropdown.Item href="#category/1">Projects</NavDropdown.Item>
-            <NavDropdown.Item href="#category/2">Literature</NavDropdown.Item>
-            <NavDropdown.Item href="#category/3">Resources</NavDropdown.Item>
+            <NavDropdown.Item href="#/projects/ePE2T0C8xy0cz5l2DIZd">Projects</NavDropdown.Item>
+            <NavDropdown.Item href="#/papers/923llnJp4ulNhQVNi8yc">Literature</NavDropdown.Item>
+            <NavDropdown.Item href="#/research/IA7kSuz8a0CpJjqpJ60n">Resources</NavDropdown.Item>
           </NavDropdown>
         </Nav>
       </Navbar.Collapse>

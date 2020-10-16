@@ -10,7 +10,7 @@
 /* The actual timeline (the vertical ruler) */
 .timeline {
   position: relative;
-  max-width: 1200px;
+  max-width: 2000px;
   margin: 0 auto;
 }
 
@@ -93,7 +93,7 @@
 
 /* The actual content */
 .tl-content {
-  padding: 20px 30px;
+  padding: 20px 60px;
   background-color: white;
   position: relative;
   border-radius: 6px;
@@ -105,7 +105,8 @@
   .timeline::after {
   left: 31px;
   }
-  
+
+
   /* Full-width containers */
   .tl-container {
   width: 100%;

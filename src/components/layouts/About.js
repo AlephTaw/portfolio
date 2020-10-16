@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import profilePic from '../../public/img/profile1.1.jpg';
 import StaticTimeline from '../timeline/StaticTimeline';
+import HomeHeader from '../layouts/content_templates/partails/headers/HomeHeader'
 
 class About extends Component{
     render() {
@@ -24,7 +25,8 @@ class About extends Component{
         return(
             <div>
                 <div className="col-xs-12" style={{height: "100px"}}></div>
-                <div className="text-center">
+                <HomeHeader/>
+                {/* <div className="text-center">
                     <div className="container" style={{"maxWidth": 600, "minWidth": 400}}>
                         <div className="row">
                             <div className="col">
@@ -55,17 +57,49 @@ class About extends Component{
                             </div>
                         </div>
                     </div>
-                </div>
-                <div className="col-xs-12" style={{height: "100px"}}></div>
-                <div className="row mb-2">
-                    <div className="col-6 mx-auto">
-                        <StaticTimeline timeline={timeline}/>
-                    </div>
-                </div>
+                </div> */}
 
-                <div className="col-xs-12" style={{height: "100px"}}></div>
-                {/* </div> */}
-                <div className="col-xs-12" style={{height: "300px"}}></div>
+                <div className="container" style={{"maxWidth": 900, "minWidth": 400}}>
+                    <div className="col-xs-12" style={{height: "50px"}}></div>
+                        <div className="text-center">
+                        <h4 className="float-center">
+                        About this Project
+                        </h4>
+                        <p> 
+                            A lab / A Modern Day Lab Notebook:
+                            A Narrative:
+                            What it is and what its not
+                            Tired of tired resumes? It's time to raise the bar and take responsibility for credentialing.
+                        </p>
+                        <hr></hr>
+                        <p>Topic • Data Source • Project Type • Libraries</p>
+                    </div>
+
+                    <div className="col-xs-12" style={{height: "50px"}}></div>
+                        <div className="text-center">
+                        <h4 className="float-center">
+                            About Me
+                        </h4>
+                        <p> 
+                            We live in a world of untapped potential, unrealized innovation, and, as such, of unfullfilled purpose.
+                            Let us light a candle to illuminate what has always been within our reach, the capacity to imagine better.
+                        </p>
+                        <hr></hr>
+                        <p>Topic • Data Source • Project Type • Libraries</p>
+                    </div>
+
+                    <div className="col-xs-12" style={{height: "50px"}}></div>
+                        <div className="text-center">
+                        <h4 className="float-center">
+                            Contact and Traditional CV
+                        </h4>
+                        <p> 
+                        To contact me or view a more traditional presentation of my work, you can access my CV here.
+                        </p>
+                    </div>
+
+                    <div className="col-xs-12" style={{height: "100px"}}></div>
+                </div>
             </div>
         )
     }

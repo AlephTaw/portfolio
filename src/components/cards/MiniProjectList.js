@@ -2,17 +2,19 @@ import React from 'react'
 import MiniProjectSummary from './MiniProjectSummary'
 import { Link } from 'react-router-dom'
 
-const MiniProjectList = ({projects}) => {
+const MiniProjectList = ({miniTopics}) => {
   return (
-    <div className="project-list section">
-    {projects && projects.map(project => {
+    <>
+    {miniTopics && miniTopics.map(miniTopic => {
       return(
-        <Link key={project.id} to={'/project/' + project.id}>
-          <MiniProjectSummary project={project}/>
-        </Link>
+        // <Link key={topic.title} to={'/topic/' + topic.id}>
+        <div key={miniTopic.title}>
+          <MiniProjectSummary miniTopic={miniTopic}/>
+        </div>
+        // </Link>
       )
     })}
-    </div>
+    </>
   )
 };
 

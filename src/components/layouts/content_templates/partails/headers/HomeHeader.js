@@ -20,7 +20,7 @@ const HomeHeader = (props) => {
                           <div className="row">
                               <div className="text-center">
                                   <h5>
-                                  "A Laboratory in the Cloud"
+                                  "A Notebook in the Cloud"
                                   </h5>
                               </div>
                               </div>
