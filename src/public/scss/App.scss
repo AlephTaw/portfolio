@@ -1,4 +1,5 @@
-@import "~bootstrap/scss/bootstrap";
-@import '~./navigation/_navbar.scss';
-@import '~./home/_home.scss';
 @import '~./_global.scss';
+@import "~bootstrap/scss/bootstrap";
+@import '~./layouts/home/_home.scss';
+@import '~./components/embeddedgist.scss';
+// @import '~./components/timeline.scss';

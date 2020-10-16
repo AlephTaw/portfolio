@@ -6,8 +6,9 @@ const Footer = () => (
 <div>
 <footer>
   <div>
+    <div className="col-xs-12 mx-auto" style={{height: "20px", "maxWidth": "600px"}}>
     <hr></hr>
-    <div className="col-xs-12" style={{height: "20px"}}></div>
+    </div>
     <div className="text-center">
       Ce n'est pas un pied de page. | <ScrollToTop>Top</ScrollToTop>
     </div>
@@ -16,8 +17,5 @@ const Footer = () => (
   </footer> 
 </div>
 );
-
-
-
 
 export default Footer;

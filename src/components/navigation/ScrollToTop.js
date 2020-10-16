@@ -17,7 +17,7 @@ export default class ScrollToTop extends Component {
 
   render() {
     return (
-            <a onClick={() => this.scrollToTop()} href=''>Top</a>
+      <div onClick={() => this.scrollToTop()} style={{"color": "blue"}}>Top</div>
     );
   }
 }
