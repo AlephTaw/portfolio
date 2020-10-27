@@ -14,6 +14,9 @@ import firebase from 'firebase/app'
 // import { isLoaded  } from 'react-redux-firebase'
 
 import * as serviceWorker from './serviceWorker';
+// Import css files
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import './public/scss/App.scss'
 
 

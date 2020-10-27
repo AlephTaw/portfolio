@@ -1,10 +1,11 @@
 import React from 'react';
 import {Nav, Navbar, NavDropdown} from 'react-bootstrap';
+import sevenBridges from '../../public/img/sevenbridges.png';
 
 const Navigation = () => {
   return (
     <Navbar collapseOnSelect>
-      <Navbar.Brand href="/">Cloud Lab v1.00.00</Navbar.Brand>
+      <Navbar.Brand href="/"><img src={sevenBridges} alt="" style={{width:"20px"}}/></Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mr-auto">
